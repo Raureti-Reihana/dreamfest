@@ -20,6 +20,9 @@ Let's get stuck in!
 
 ---
 
+## MVP (Minimum Viable Product)
+- Complete steps 0 - 6
+
 ## Setup
 
 ### 0. Installation and migrations
