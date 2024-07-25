@@ -159,13 +159,6 @@ mutation that makes PATCH requests to a specific location.
 1. Look at the `GET /events/:id` route in `routes/events.ts`. This route supplies the current data to the "Edit Event" form, ready for the user to edit it.
 2. Build a `getEventById` function with an `id` parameter. Use this in your route.
 
-**Update the form**
-
-3. Like the "Add new event" form above, the "Edit event" form also needs a list of locations from the database. We can use `getAllLocations` for a third time, but this time we need to modify the data before we send it to the form, so that our data records which location is the current location for this event
-   - Maybe you could use an array function here?
-4. Make sure you call `getEventById` first, and then `getAllLocations`
-   - You're managing three bits of data here: `days`, `event` and `locations`, how will you manage this data so that each function in the promise chain can see everything it needs to see?
-
 **Submit the form**
 
 5. Build an `updateEvent` function with an `updatedEvent` parameter
